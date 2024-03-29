@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunar Eclipse</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #ffe4d6;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .universe {
+            width: 30vw;
+            aspect-ratio: 1;
+            background-color: yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* place-items: center; */
+            animation: sky 10s ease-in-out infinite;
+        }
+
+        @keyframes sky {
+            0% {
+                background-color: #ffbb5cdc;
+            }
+
+            25% {
+                background-color: #f0bc74dc;
+            }
+
+            50% {
+                background-color: #000;
+            }
+
+            75% {
+                background-color: #f3b156dc;
+            }
+
+            100% {
+                background-color: #ffbb5cdc;
+            }
+        }
+
+        .sun {
+            width: 10vw;
+            aspect-ratio: 1;
+            background-color: #e25e3e;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        .sun::after {
+            content: "";
+            position: absolute;
+            width: inherit;
+            aspect-ratio: 1;
+            border-radius: inherit;
+            background-color: #000;
+            animation: moonwalk 10s ease-in-out infinite;
+        }
+
+        @keyframes moonwalk {
+            0% {
+                translate: 100%;
+                scale: 1;
+            }
+
+            50% {
+                translate: 0%;
+                scale: 0.9;
+            }
+
+            100% {
+                translate: -100%;
+                scale: 0.9;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="universe">
+        <div class="sun"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 223, 194);
+}
+
+.container-img {
+    width: 60vw;
+    height: 300px;
+    border-radius: 10px;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/036/042/822/non_2x/ai-generated-funny-horse-in-sunglasses-free-photo.jpg);
+    background-size: cover;
+
+    animation: carasual 10s linear infinite;
+}
+
+@keyframes carasual {
+0% {
+    background-image: url(https://images.pexels.com/photos/160846/french-bulldog-summer-smile-joy-160846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+}
+
+20% {
+    background-image: url(https://images.pexels.com/photos/2647053/pexels-photo-2647053.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+}
+40% {
+    background-image: url(https://images.pexels.com/photos/422220/pexels-photo-422220.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+}
+
+60% {
+    background-image: url(https://images.pexels.com/photos/4884404/pexels-photo-4884404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+}
+
+80% {
+    background-image: url(https://images.pexels.com/photos/2339213/pexels-photo-2339213.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+}
+
+100% {
+    background-image: url(https://images.pexels.com/photos/7640482/pexels-photo-7640482.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+}
+}

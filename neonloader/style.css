@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(50, 48, 48);
+    display: grid;
+    place-items: center;
+}
+
+.loader {
+    width: 200px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #865dff;
+    position: relative;
+    animation: circleloader 2s linear infinite reverse;
+}
+
+.loader::before {
+    content: "";
+    position: absolute;
+    top: 48;
+    left: 50;
+    width: 170px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: rgb(50, 48, 48);
+}
+
+.loader::after {
+    content: "";
+    position: absolute;
+    top: -19px;
+    left: 62px;
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #865dff;
+    box-shadow: 0px 5px 25px 30px rgba(148, 144, 144, 0.5);
+}
+ 
+
+@keyframes circleloader {
+    100% {
+        rotate: 360deg;
+    }
+    
+}
